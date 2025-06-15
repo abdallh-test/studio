@@ -24,7 +24,7 @@ export function HeroSection() {
           </div>
           <h1 className="font-headline text-5xl md:text-7xl font-bold mb-6">
             <span className="block">Hello, I&apos;m Abdallh</span>
-            <span className="block text-primary">A Passionate Flutter Developer</span>
+            <span className="block text-primary">Test test test</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             I craft beautiful, high-performance mobile applications that provide seamless user experiences across platforms.

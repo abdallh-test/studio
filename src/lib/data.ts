@@ -31,7 +31,7 @@ export const projects: Project[] = [
     id: '1',
     title: 'E-commerce App "FlutterCart"',
     description: 'A full-featured e-commerce mobile application built with Flutter, including product listings, cart management, and Stripe integration for payments.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/projects/pm-2/NewTux.png',
     imageHint: 'mobile shopping',
     tags: ['Flutter', 'Dart', 'Firebase', 'Stripe', 'Provider'],
     githubUrl: 'https://github.com/abdallh',
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     id: '2',
     title: 'Social Media Platform "ConnectMe"',
     description: 'A cross-platform social networking app allowing users to share posts, follow others, and chat in real-time using Flutter and Firebase.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://images.unsplash.com/photo-1726137570714-68c4d227b6b7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     imageHint: 'social network',
     tags: ['Flutter', 'Dart', 'Firebase Realtime DB', 'Bloc'],
     githubUrl: 'https://github.com/abdallh',
@@ -53,6 +53,7 @@ export const projects: Project[] = [
     imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'task manager',
     tags: ['Flutter', 'Dart', 'SQLite', 'GetX'],
+
     liveUrl: '#',
   },
 ];
