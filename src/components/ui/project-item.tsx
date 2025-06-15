@@ -16,6 +16,7 @@ export function ProjectItem({ project }: ProjectItemProps) {
       <CardHeader className="p-0">
         <div className="aspect-video relative">
           <Image
+            unoptimized
             src={project.imageUrl}
             alt={project.title}
             fill

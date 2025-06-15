@@ -42,6 +42,7 @@ export function HeroSection() {
                 height={150} 
                 className="rounded-full mx-auto shadow-xl border-4 border-primary"
                 data-ai-hint={profileImageHint}
+                unoptimized
               />
           </div>
           <h1 className="font-headline text-5xl md:text-7xl font-bold mb-6">
