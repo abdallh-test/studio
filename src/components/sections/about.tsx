@@ -31,6 +31,7 @@ export function AboutSection() {
               height={600}
               className="rounded-xl shadow-2xl object-cover aspect-[5/6]"
               data-ai-hint="developer coding"
+              unoptimized
             />
           </AnimatedSection>
           
