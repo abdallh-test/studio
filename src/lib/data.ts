@@ -37,11 +37,11 @@ export interface HeroData {
 }
 
 export const heroData: HeroData = {
-  profileImageUrl: 'https://placehold.co/150x150.png',
-  profileImageAlt: 'Abdallh - Flutter Developer',
+  profileImageUrl: '/my_images/1.JPG',
+  profileImageAlt: 'Abdallh Mostafa - Flutter Developer',
   profileImageHint: 'professional developer',
   greeting: "Hello, I'm",
-  name: 'Abdallh',
+  name: 'Abdallh Mostafa',
   title: 'Flutter Developer Extraordinaire',
   description: 'I craft beautiful, high-performance mobile applications that provide seamless user experiences across platforms.',
   primaryButtonText: 'View My Work',
@@ -98,6 +98,16 @@ export const projects: Project[] = [
 
     liveUrl: '#',
   },
+  {
+    id: '4',
+    title: 'Test"',
+    description: 'A productivity app for managing tasks and projects with features like reminders, team collaboration, and progress tracking.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'task manager',
+    tags: ['Flutter', 'Dart', 'SQLite', 'GetX'],
+
+    liveUrl: '#',
+  },
 ];
 
 export interface SkillCategory {
@@ -108,7 +118,7 @@ export interface SkillCategory {
 
 export const skillCategories: SkillCategory[] = [
   {
-    name: 'Frontend Development',
+    name: 'Flutter Development',
     Icon: Smartphone,
     skills: ['Flutter', 'Dart', 'React Native (Basic)', 'Swift (Basic)', 'Kotlin (Basic)', 'UI/UX Design Principles', 'Responsive Design', 'Material Design', 'Cupertino Widgets'],
   },
@@ -121,6 +131,11 @@ export const skillCategories: SkillCategory[] = [
     name: 'Development Tools',
     Icon: Settings,
     skills: ['Git & GitHub', 'VS Code', 'Android Studio', 'Xcode', 'CI/CD (Codemagic, GitHub Actions)', 'JIRA', 'Agile Methodologies'],
+  },
+  {
+    name: 'Other Skills',
+    Icon: Sparkles,
+    skills: ['Problem Solving', 'Team Collaboration', 'State Management (Provider, BLoC, GetX, Riverpod)', 'API Integration', 'Unit & Widget Testing'],
   },
   {
     name: 'Other Skills',
