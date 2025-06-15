@@ -153,7 +153,7 @@ export const skillCategories: SkillCategory[] = [
     skills: ['Problem Solving', 'Team Collaboration', 'State Management (Provider, BLoC, GetX, Riverpod)', 'API Integration', 'Unit & Widget Testing'],
   }
   {
-    name: 'Test test',
+    name: 'Test test test',
     Icon: Sparkles,
     skills: ['Problem Solving', 'Team Collaboration', 'State Management (Provider, BLoC, GetX, Riverpod)', 'API Integration', 'Unit & Widget Testing'],
   }
