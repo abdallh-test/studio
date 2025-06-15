@@ -1,5 +1,6 @@
+
 import type { LucideIcon } from 'lucide-react';
-import { Github, Linkedin, Mail, Smartphone, Server, Settings, Users, MessageSquare, Sparkles, Palette, Code } from 'lucide-react';
+import { Github, Linkedin, Mail, Smartphone, Server, Settings, Users, MessageSquare, Sparkles, Palette, Code, Download, MoveRight } from 'lucide-react';
 
 export interface NavItem {
   name: string;
@@ -14,6 +15,47 @@ export const navItems: NavItem[] = [
   { name: 'Testimonials', href: '#testimonials' },
   { name: 'Contact', href: '#contact' },
 ];
+
+export interface HeroData {
+  profileImageUrl: string;
+  profileImageAlt: string;
+  profileImageHint: string;
+  greeting: string;
+  name: string;
+  title: string;
+  description: string;
+  primaryButtonText: string;
+  primaryButtonLink: string;
+  primaryButtonIcon?: LucideIcon;
+  secondaryButtonText: string;
+  secondaryButtonLink: string;
+  secondaryButtonIcon?: LucideIcon;
+  cvButtonText?: string;
+  cvButtonLink?: string;
+  cvButtonIcon?: LucideIcon;
+  cvFileName?: string;
+}
+
+export const heroData: HeroData = {
+  profileImageUrl: 'https://placehold.co/150x150.png',
+  profileImageAlt: 'Abdallh - Flutter Developer',
+  profileImageHint: 'professional developer',
+  greeting: "Hello, I'm",
+  name: 'Abdallh',
+  title: 'Flutter Developer Extraordinaire',
+  description: 'I craft beautiful, high-performance mobile applications that provide seamless user experiences across platforms.',
+  primaryButtonText: 'View My Work',
+  primaryButtonLink: '#projects',
+  primaryButtonIcon: MoveRight,
+  secondaryButtonText: 'Get In Touch',
+  secondaryButtonLink: '#contact',
+  // Optional CV download button
+  // cvButtonText: 'Download CV',
+  // cvButtonLink: '/path-to-cv.pdf', // Replace with your actual CV path
+  // cvButtonIcon: Download,
+  // cvFileName: 'Abdallh-CV.pdf' // Suggested filename for download
+};
+
 
 export interface Project {
   id: string;

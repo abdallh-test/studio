@@ -1,10 +1,32 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { AnimatedSection } from '@/components/ui/animated-section';
-import { MoveRight, Download } from 'lucide-react';
+import { heroData } from '@/lib/data'; 
+// Removed MoveRight, Download as they will come from heroData if defined
 
 export function HeroSection() {
+  const {
+    profileImageUrl,
+    profileImageAlt,
+    profileImageHint,
+    greeting,
+    name,
+    title,
+    description,
+    primaryButtonText,
+    primaryButtonLink,
+    primaryButtonIcon: PrimaryButtonIcon,
+    secondaryButtonText,
+    secondaryButtonLink,
+    secondaryButtonIcon: SecondaryButtonIcon,
+    cvButtonText,
+    cvButtonLink,
+    cvButtonIcon: CvButtonIcon,
+    cvFileName
+  } = heroData;
+
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center py-20 bg-gradient-to-br from-background to-card overflow-hidden">
       <div className="absolute inset-0 opacity-10">
@@ -14,39 +36,41 @@ export function HeroSection() {
         <AnimatedSection delay={100} className="max-w-3xl mx-auto">
           <div className="mb-8">
              <Image 
-                src="https://placehold.co/150x150.png" 
-                alt="Abdallh - Flutter Developer" 
+                src={profileImageUrl}
+                alt={profileImageAlt}
                 width={150} 
                 height={150} 
                 className="rounded-full mx-auto shadow-xl border-4 border-primary"
-                data-ai-hint="professional developer"
+                data-ai-hint={profileImageHint}
               />
           </div>
           <h1 className="font-headline text-5xl md:text-7xl font-bold mb-6">
-            <span className="block">Hello, I&apos;m Abdallh</span>
-            <span className="block text-primary">Test test test</span>
+            <span className="block">{greeting} {name}</span>
+            <span className="block text-primary">{title}</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            I craft beautiful, high-performance mobile applications that provide seamless user experiences across platforms.
+            {description}
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Button size="lg" asChild className="shadow-lg transform hover:scale-105 transition-transform duration-300">
-              <Link href="#projects">
-                View My Work <MoveRight className="ml-2 h-5 w-5" />
+              <Link href={primaryButtonLink}>
+                {primaryButtonText}
+                {PrimaryButtonIcon && <PrimaryButtonIcon className="ml-2 h-5 w-5" />}
               </Link>
             </Button>
             <Button variant="outline" size="lg" asChild className="shadow-lg transform hover:scale-105 transition-transform duration-300">
-              <Link href="#contact">
-                Get In Touch
+              <Link href={secondaryButtonLink}>
+                {secondaryButtonText}
+                {SecondaryButtonIcon && <SecondaryButtonIcon className="ml-2 h-5 w-5" />}
               </Link>
             </Button>
-             {/* Optional: Add a CV download button 
-            <Button variant="secondary" size="lg" asChild className="shadow-lg transform hover:scale-105 transition-transform duration-300">
-              <a href="/path-to-cv.pdf" download>
-                Download CV <Download className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
-            */}
+            {cvButtonText && cvButtonLink && CvButtonIcon && (
+              <Button variant="secondary" size="lg" asChild className="shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <a href={cvButtonLink} download={cvFileName || true}>
+                  {cvButtonText} <CvButtonIcon className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+            )}
           </div>
         </AnimatedSection>
       </div>
