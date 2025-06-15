@@ -142,6 +142,21 @@ export const skillCategories: SkillCategory[] = [
     Icon: Sparkles,
     skills: ['Problem Solving', 'Team Collaboration', 'State Management (Provider, BLoC, GetX, Riverpod)', 'API Integration', 'Unit & Widget Testing'],
   }
+  {
+    name: 'Other Skills',
+    Icon: Sparkles,
+    skills: ['Problem Solving', 'Team Collaboration', 'State Management (Provider, BLoC, GetX, Riverpod)', 'API Integration', 'Unit & Widget Testing'],
+  }
+  {
+    name: 'Other Skills',
+    Icon: Sparkles,
+    skills: ['Problem Solving', 'Team Collaboration', 'State Management (Provider, BLoC, GetX, Riverpod)', 'API Integration', 'Unit & Widget Testing'],
+  }
+  {
+    name: 'Test test',
+    Icon: Sparkles,
+    skills: ['Problem Solving', 'Team Collaboration', 'State Management (Provider, BLoC, GetX, Riverpod)', 'API Integration', 'Unit & Widget Testing'],
+  }
 ];
 
 export interface Testimonial {
